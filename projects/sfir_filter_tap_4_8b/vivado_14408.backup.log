@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Sat Oct 19 10:11:24 2024
+# Process ID: 14408
+# Current directory: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/projects/sfir_filter_tap_4_8b
+# Command line: vivado.exe -mode tcl -source ./run_sfir_filter_tap_4_8b.tcl
+# Log file: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/projects/sfir_filter_tap_4_8b/vivado.log
+# Journal file: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/projects/sfir_filter_tap_4_8b\vivado.jou
+# Running On: WORKSTATION, OS: Windows, CPU Frequency: 2611 MHz, CPU Physical cores: 10, Host memory: 16794 MB
+#-----------------------------------------------------------
+source ./run_sfir_filter_tap_4_8b.tcl
+couldn't read file "./run_sfir_filter_tap_4_8b.tcl": no such file or directory
+Vivado% 

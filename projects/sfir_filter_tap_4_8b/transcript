@@ -1,0 +1,75 @@
+# do run_modelsim.tcl 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package pkg_gen_heartbeat
+# -- Compiling package body pkg_gen_heartbeat
+# -- Loading package pkg_gen_heartbeat
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package pkg_mgt_file
+# -- Compiling package body pkg_mgt_file
+# -- Loading package pkg_mgt_file
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package pkg_mgt_file
+# -- Loading package pkg_gen_heartbeat
+# -- Compiling entity bch_sfir_filter_4
+# -- Compiling architecture behavioral of bch_sfir_filter_4
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package pkg_gen_heartbeat
+# -- Compiling entity sfir_filter_4
+# -- Compiling architecture rtl of sfir_filter_4
+# vsim -voptargs=+acc work.bch_sfir_filter_4 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.pkg_mgt_file(body)
+# Loading work.pkg_gen_heartbeat(body)
+# Loading work.bch_sfir_filter_4(behavioral)
+# ** Warning: (vsim-3473) Component instance "inst_dut_gen_heartbeat : gen_heartbeat" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /bch_sfir_filter_4 File: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/sources/bench/bch_sfir_filter_4.vhd
+# Loading work.sfir_filter_4(rtl)
+# ** Error: Cannot open macro file: wave.do
+# Error in macro ./run_modelsim.tcl line 48
+# Cannot open macro file: wave.do
+#     while executing
+# "do wave.do"
+add wave -position insertpoint sim:/bch_sfir_filter_4/inst_sfir_filter_4/*
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf {C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/projects/sfir_filter_tap_4_8b/wave.do}
+restart
+# ** Warning: (vsim-3473) Component instance "inst_dut_gen_heartbeat : gen_heartbeat" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /bch_sfir_filter_4 File: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/sources/bench/bch_sfir_filter_4.vhd
+run -all
+# ** Note: rpt_bch_sfir_filter_4_wrapper_nexys_a7_sim.txt proc_file_rpt_open success
+#    Time: 2501 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Note: log_bch_sfir_filter_4_wrapper_nexys_a7_sim.csv proc_file_log_open success
+#    Time: 2503 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Note: C:\Users\Tugdual LE PELLETER\Documents\Recherche\Repositories\fir_filter_4\data\x_in_sfi_bin.txt proc_file_stm_open success
+#    Time: 2505 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Note: log_bch_sfir_filter_4_wrapper_nexys_a7_sim.csv proc_file_log_close success
+#    Time: 22533 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Note: rpt_bch_sfir_filter_4_wrapper_nexys_a7_sim.txt proc_file_rpt_close success
+#    Time: 22536 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Note: C:\Users\Tugdual LE PELLETER\Documents\Recherche\Repositories\fir_filter_4\data\x_in_sfi_bin.txt proc_file_stm_close success
+#    Time: 22538 ns  Iteration: 1  Instance: /bch_sfir_filter_4
+# ** Failure: end of simulation - success
+#    Time: 22540 ns  Iteration: 1  Process: /bch_sfir_filter_4/p_sim_end File: C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/sources/bench/bch_sfir_filter_4.vhd
+# Break in Process p_sim_end at C:/Users/Tugdual LE PELLETER/Documents/Recherche/Repositories/sfir_filter_tap_4_8b/sources/bench/bch_sfir_filter_4.vhd line 929
